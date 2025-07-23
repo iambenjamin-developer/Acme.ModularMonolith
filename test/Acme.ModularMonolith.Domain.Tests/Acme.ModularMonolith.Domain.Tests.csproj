@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Acme.ModularMonolith</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Acme.ModularMonolith.Domain\Acme.ModularMonolith.Domain.csproj" />
+    <ProjectReference Include="..\Acme.ModularMonolith.TestBase\Acme.ModularMonolith.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>
